@@ -15,8 +15,10 @@
 //Layouts
 @import "./layouts/wrapper";
 @import "./layouts/header";
+@import "./layouts/main";
 @import "./layouts/footer";
 
 //Components
 @import "./components/navigation";
 @import "./components/sidebar";
+@import "./components/search";

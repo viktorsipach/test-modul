@@ -64,6 +64,7 @@
                 </object>
             </div>
         </header>
+        <main class="main">
         <section class="sidebar">
             <div class="sidebar__header">
                 Your friends
@@ -138,7 +139,7 @@
                     <span class="sidebar__current"></span><span class="sidebar__all"></span>
                 </div>
             </div>
-            <div class="sidebar__items search">
+            <div class="sidebar__items sidebar-search">
                 <span class="icon icon-search"></span>
                 <p class="sidebar__name">Искать друзей</p>
                 <div class="sidebar__counter">
@@ -146,7 +147,24 @@
                 </div>
             </div>
         </section>
-       
+        <section class="search">
+            <div class="search__input">
+                <img src="./src/img/icons/search-sidebar.svg" alt="icon-search" width="11px" height="11px" class="search__icon"/>
+                <input type="text" placeholder="Поиск друзей"/>
+            </div>
+            <div class="search-country">
+                <select name="country" class="select-country">
+                    <option value="all">Все страны</option>
+                </select>
+            </div>
+            <div class="search-city">
+                <select name="city" class="select-city">
+                    <option value="all">Все города</option>
+                </select>
+                <span class="select-city_icon"></span>
+            </div>
+        </section>
+    </main>
     </div>
 </body>
 </html>

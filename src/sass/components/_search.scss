@@ -1,0 +1,61 @@
+.search {
+    width: 888px;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search__input {
+    width: 510px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+    border-radius: 5px;
+}
+
+.search__input input {
+    width: 470px;
+    height: 40px;
+    border: none;
+}
+
+.search input:focus, select:focus {
+    outline: none;
+}
+
+.search__input input::placeholder {
+    @include font($size: 1.3rem, $height: 2.6rem, $weight: 400);
+    color: #ADADAD;
+}
+
+.search__input .search__icon {
+    margin: 10px;
+}
+
+.select-city, .select-country {
+    width: 170px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: $color-white;
+    
+}
+
+select {
+    @include font($size: 1.2rem, $height: 2.6rem, $weight: 600);
+    color: #3F4548;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='26' viewBox='0 0 24 24' width='26' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
