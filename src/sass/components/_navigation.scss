@@ -1,0 +1,41 @@
+.header__navigation {
+    height: 80px;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+.navigation__link {
+    width: 102px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: $color-opacity;
+    @extend %transition;
+}
+
+.navigation__link:hover {
+    height: 55px;
+    background: $color-opacity;
+    @extend %transition;
+}
+
+.navigation__link:hover:after {
+    content: attr(data-name);
+    color: $color-white;
+    padding-bottom: 4px;
+}
+
+.navigation__link:hover .icon {
+    margin-top: 12px;
+}
