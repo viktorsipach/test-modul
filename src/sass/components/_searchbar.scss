@@ -1,11 +1,11 @@
-.search {
+.searchbar {
     width: 888px;
     height: min-content;
     display: flex;
     justify-content: space-between;
-    margin-left: 28px;
+    margin-left: 18px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .search__input {
@@ -23,7 +23,7 @@
     border: none;
 }
 
-.search input:focus, select:focus {
+input:focus, select:focus {
     outline: none;
 }
 

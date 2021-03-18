@@ -1,170 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/sass/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="wrapper">
-        <header class="header">
-            <h1 class="logo">Logogo</h1>
-            <img src="./src/img/avatar.png" alt="avatar" class="avatar header__avatar">
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__link home" data-name="Домой">
-                        <object data="./src/img/icons/home.svg" type="image/svg+xml" class="icon icon-home">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                    <li class="navigation__link friends" data-name="Друзья">
-                        <object data="./src/img/icons/friends.svg" type="image/svg+xml" class="icon icon-friends">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                    <li class="navigation__link messages" data-name="Сообщения">
-                        <object data="./src/img/icons/messages.svg" type="image/svg+xml" class="icon icon-messages">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                    <li class="navigation__link groups" data-name="Группы">
-                        <object data="./src/img/icons/groups.svg" type="image/svg+xml" class="icon icon-groups">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                    <li class="navigation__link media" data-name="Медиа">
-                        <object data="./src/img/icons/media.svg" type="image/svg+xml" class="icon icon-media">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                    <li class="navigation__link places" data-name="Места">
-                        <object data="./src/img/icons/places.svg" type="image/svg+xml" class="icon icon-places">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                    <li class="navigation__link market" data-name="Маркет">
-                        <object data="./src/img/icons/market.svg" type="image/svg+xml" class="icon icon-market">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                    <li class="navigation__link library" data-name="Библиотека">
-                        <object data="./src/img/icons/library.svg" type="image/svg+xml" class="icon icon-library">
-                            Your browser does not support SVG
-                        </object>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__search">
-                <object data="./src/img/icons/search.svg" type="image/svg+xml" class="icon">
-                    Your browser does not support SVG
-                </object>
-            </div>
-        </header>
-        <main class="main">
-        <section class="sidebar">
-            <div class="sidebar__header">
-                Your friends
-            </div>
-            <div class="sidebar__items friends">
-                <span class="icon icon-friends"></span>
-                <p class="sidebar__name">Мои друзья</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current">4</span><span class="sidebar__all">/45</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./src/sass/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="logo">Logogo</h1>
+                <img src="./src/img/avatar.png" alt="avatar" class="avatar
+                    header__avatar">
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__link home" data-name="Домой">
+                            <object data="./src/img/icons/home.svg"
+                                type="image/svg+xml" class="icon icon-home">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                        <li class="navigation__link friends" data-name="Друзья">
+                            <object data="./src/img/icons/friends.svg"
+                                type="image/svg+xml" class="icon icon-friends">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                        <li class="navigation__link messages"
+                            data-name="Сообщения">
+                            <object data="./src/img/icons/messages.svg"
+                                type="image/svg+xml" class="icon icon-messages">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                        <li class="navigation__link groups" data-name="Группы">
+                            <object data="./src/img/icons/groups.svg"
+                                type="image/svg+xml" class="icon icon-groups">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                        <li class="navigation__link media" data-name="Медиа">
+                            <object data="./src/img/icons/media.svg"
+                                type="image/svg+xml" class="icon icon-media">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                        <li class="navigation__link places" data-name="Места">
+                            <object data="./src/img/icons/places.svg"
+                                type="image/svg+xml" class="icon icon-places">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                        <li class="navigation__link market" data-name="Маркет">
+                            <object data="./src/img/icons/market.svg"
+                                type="image/svg+xml" class="icon icon-market">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                        <li class="navigation__link library"
+                            data-name="Библиотека">
+                            <object data="./src/img/icons/library.svg"
+                                type="image/svg+xml" class="icon icon-library">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <object data="./src/img/icons/search.svg"
+                        type="image/svg+xml" class="icon">
+                        Your browser does not support SVG
+                    </object>
                 </div>
-            </div>
-            <div class="sidebar__items followers">
-                <span class="icon icon-followers"></span>
-                <p class="sidebar__name">Мои подписчики</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current">4</span><span class="sidebar__all">/45</span>
+            </header>
+            <section class="sidebar">
+                <div class="sidebar__header">
+                    Your friends
                 </div>
-            </div>
-            <div class="sidebar__items following">
-                <span class="icon icon-following"></span>
-                <p class="sidebar__name">Мои подписки</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current">4</span><span class="sidebar__all">/45</span>
+                <div class="sidebar__items friends">
+                    <span class="icon icon-friends"></span>
+                    <p class="sidebar__name">Мои друзья</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current">4</span><span
+                            class="sidebar__all">/45</span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items messages">
-                <span class="icon icon-messages"></span>
-                <p class="sidebar__name">Сообщения</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current">4</span><span class="sidebar__all">/45</span>
+                <div class="sidebar__items followers">
+                    <span class="icon icon-followers"></span>
+                    <p class="sidebar__name">Мои подписчики</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current">4</span><span
+                            class="sidebar__all">/45</span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items category">
-                <span class="icon icon-category"></span>
-                <p class="sidebar__name">Категория</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current">4</span><span class="sidebar__all">/45</span>
+                <div class="sidebar__items following">
+                    <span class="icon icon-following"></span>
+                    <p class="sidebar__name">Мои подписки</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current">4</span><span
+                            class="sidebar__all">/45</span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items new-user">
-                <span class="icon icon-new"></span>
-                <p class="sidebar__name">Новые пользователи</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current"></span><span class="sidebar__all"></span>
+                <div class="sidebar__items messages">
+                    <span class="icon icon-messages"></span>
+                    <p class="sidebar__name">Сообщения</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current">4</span><span
+                            class="sidebar__all">/45</span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items popular">
-                <span class="icon icon-popular"></span>
-                <p class="sidebar__name">Популярные люди</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current"></span><span class="sidebar__all"></span>
+                <div class="sidebar__items category">
+                    <span class="icon icon-category"></span>
+                    <p class="sidebar__name">Категория</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current">4</span><span
+                            class="sidebar__all">/45</span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items recomendation">
-                <span class="icon icon-recommendation"></span>
-                <p class="sidebar__name">Рекомендации</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current"></span><span class="sidebar__all"></span>
+                <div class="sidebar__items new-user">
+                    <span class="icon icon-new"></span>
+                    <p class="sidebar__name">Новые пользователи</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current"></span><span
+                            class="sidebar__all"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items black-list">
-                <span class="icon icon-black-list"></span>
-                <p class="sidebar__name">Черный список</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current"></span><span class="sidebar__all">45</span>
+                <div class="sidebar__items popular">
+                    <span class="icon icon-popular"></span>
+                    <p class="sidebar__name">Популярные люди</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current"></span><span
+                            class="sidebar__all"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items invite">
-                <span class="icon icon-invite"></span>
-                <p class="sidebar__name">Пригласить друзей</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current"></span><span class="sidebar__all"></span>
+                <div class="sidebar__items recomendation">
+                    <span class="icon icon-recommendation"></span>
+                    <p class="sidebar__name">Рекомендации</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current"></span><span
+                            class="sidebar__all"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar__items sidebar-search">
-                <span class="icon icon-search"></span>
-                <p class="sidebar__name">Искать друзей</p>
-                <div class="sidebar__counter">
-                    <span class="sidebar__current"></span><span class="sidebar__all"></span>
+                <div class="sidebar__items black-list">
+                    <span class="icon icon-black-list"></span>
+                    <p class="sidebar__name">Черный список</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current"></span><span
+                            class="sidebar__all">45</span>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="search">
-            <div class="search__input">
-                <img src="./src/img/icons/search-sidebar.svg" alt="icon-search" width="11px" height="11px" class="search__icon"/>
-                <input type="text" placeholder="Поиск друзей"/>
-            </div>
-            <div class="search-country">
-                <select name="country" class="select-country">
-                    <option value="all">Все страны</option>
-                </select>
-            </div>
-            <div class="search-city">
-                <select name="city" class="select-city">
-                    <option value="all">Все города</option>
-                </select>
-                <span class="select-city_icon"></span>
-            </div>
-        </section>
-    </main>
-    </div>
-</body>
+                <div class="sidebar__items invite">
+                    <span class="icon icon-invite"></span>
+                    <p class="sidebar__name">Пригласить друзей</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current"></span><span
+                            class="sidebar__all"></span>
+                    </div>
+                </div>
+                <div class="sidebar__items sidebar-search">
+                    <span class="icon icon-search"></span>
+                    <p class="sidebar__name">Искать друзей</p>
+                    <div class="sidebar__counter">
+                        <span class="sidebar__current"></span><span
+                            class="sidebar__all"></span>
+                    </div>
+                </div>
+            </section>
+            <main class="main">
+                <section class="searchbar">
+                    <div class="search__input">
+                        <img src="./src/img/icons/search-sidebar.svg"
+                            alt="icon-search" width="11px" height="11px"
+                            class="search__icon" />
+                        <input type="text" placeholder="Поиск друзей" />
+                    </div>
+                    <div class="search-country">
+                        <select name="country" class="select-country">
+                            <option value="all">Все страны</option>
+                        </select>
+                    </div>
+                    <div class="search-city">
+                        <select name="city" class="select-city">
+                            <option value="all">Все города</option>
+                        </select>
+                        <span class="select-city_icon"></span>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content__header">
+                        <div class="post-owner">
+                            <img src="./src/img/post-avatar.png" alt="avatar"
+                                class="post-avatar">
+                            <div class="post-owner__wrapper">
+                                <h4 class="post-owner__name">Имя Фамилия</h4>
+                                <h5 class="post-owner__time">6 минут назад</h5>
+                            </div>
+                        </div>
+                        <div class="content__icon overflow-menu">
+                            <img src="./src/img/icons/overflow-menu.svg"
+                                alt="icon-menu">
+                        </div>
+                    </div>
+                    <h4 class="content__description">Интересное видео на тему
+                        “Как выбрать”. Что думаете?</h4>
+                    <div class="content__main">
+                        <iframe width="100%" height="495"
+                            src="https://www.youtube.com/embed/KHJPv7om_tY?start=35"
+                            frameborder="0" allow="accelerometer; autoplay;
+                            clipboard-write; encrypted-media; gyroscope;
+                            picture-in-picture"></iframe>
+                    </div>
+                    <h4 class="content__description">Интересное видео на тему
+                        “Как выбрать”. Что думаете?</h4>
+                    <div class="content__footer">
+                        <div class="content__icon icon-appraisal">
+                            <img src="./src/img/icons/appraisal.svg"
+                                alt="icon-appraisal">
+                        </div>
+                        <div class="content__icon icon-comment">
+                            <img src="./src/img/icons/comment.svg"
+                                alt="icon-comment">
+                        </div>
+                        <div class="content__icon icon-share">
+                            <img src="./src/img/icons/share.svg"
+                                alt="icon-share">
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <a href="#" class="footer__item">О проекте</a>
+                <a href="#" class="footer__item">Сотрудничество</a>
+                <a href="#" class="footer__item">Правовая информация</a>
+                <a href="#" class="footer__item">Защита данных</a>
+                <a href="#" class="footer__item">Написать в техподдержку</a>
+            </footer>
+        </div>
+    </body>
 </html>
