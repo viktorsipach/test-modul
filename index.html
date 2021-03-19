@@ -19,65 +19,70 @@
                     header__avatar">
                 <nav class="header__navigation">
                     <ul class="navigation">
-                        <li class="navigation__link home" data-name="Домой">
+                        <li class="navigation__link home" data-name="Домой" data-color="#7C7474">
                             <object data="./src/img/icons/home.svg"
                                 type="image/svg+xml" class="icon icon-home">
                                 Your browser does not support SVG
                             </object>
                         </li>
-                        <li class="navigation__link friends" data-name="Друзья">
+                        <li class="navigation__link active_link friends" data-name="Друзья" data-color="#669774">
                             <object data="./src/img/icons/friends.svg"
                                 type="image/svg+xml" class="icon icon-friends">
                                 Your browser does not support SVG
                             </object>
                         </li>
-                        <li class="navigation__link messages"
+                        <li class="navigation__link messages" data-color="#5574B0"
                             data-name="Сообщения">
                             <object data="./src/img/icons/messages.svg"
                                 type="image/svg+xml" class="icon icon-messages">
                                 Your browser does not support SVG
                             </object>
                         </li>
-                        <li class="navigation__link groups" data-name="Группы">
+                        <li class="navigation__link groups" data-name="Группы" data-color="#608AA1">
                             <object data="./src/img/icons/groups.svg"
                                 type="image/svg+xml" class="icon icon-groups">
                                 Your browser does not support SVG
                             </object>
                         </li>
-                        <li class="navigation__link media" data-name="Медиа">
+                        <li class="navigation__link media" data-name="Медиа" data-color="#E5925B">
                             <object data="./src/img/icons/media.svg"
                                 type="image/svg+xml" class="icon icon-media">
                                 Your browser does not support SVG
                             </object>
                         </li>
-                        <li class="navigation__link places" data-name="Места">
+                        <li class="navigation__link places" data-name="Места" data-color="#D89342">
                             <object data="./src/img/icons/places.svg"
                                 type="image/svg+xml" class="icon icon-places">
                                 Your browser does not support SVG
                             </object>
                         </li>
-                        <li class="navigation__link market" data-name="Маркет">
+                        <li class="navigation__link market" data-name="Маркет" data-color="#E6635B">
                             <object data="./src/img/icons/market.svg"
                                 type="image/svg+xml" class="icon icon-market">
                                 Your browser does not support SVG
                             </object>
                         </li>
-                        <li class="navigation__link library"
-                            data-name="Библиотека">
+                        <li class="navigation__link library" data-name="Библиотека" data-color="#B38D75">
                             <object data="./src/img/icons/library.svg"
                                 type="image/svg+xml" class="icon icon-library">
                                 Your browser does not support SVG
                             </object>
                         </li>
+                        <li class="navigation__link_search" data-color="#FFFFFF">
+                            <object data="./src/img/icons/search.svg"
+                                type="image/svg+xml" class="icon">
+                                Your browser does not support SVG
+                            </object>
+                        </li>
                     </ul>
                 </nav>
-                <div class="header__search">
-                    <object data="./src/img/icons/search.svg"
-                        type="image/svg+xml" class="icon">
-                        Your browser does not support SVG
-                    </object>
-                </div>
             </header>
+
+            <aside class="aside">
+                <span class="aside__color"></span>
+                <h2 class="aside__text">friends</h2>
+            </aside>
+
             <section class="sidebar">
                 <div class="sidebar__header">
                     Your friends
@@ -171,6 +176,7 @@
                     </div>
                 </div>
             </section>
+
             <main class="main">
                 <section class="searchbar">
                     <div class="search__input">
@@ -233,6 +239,7 @@
                     </div>
                 </section>
             </main>
+
             <footer class="footer">
                 <a href="#" class="footer__item">О проекте</a>
                 <a href="#" class="footer__item">Сотрудничество</a>
@@ -241,5 +248,6 @@
                 <a href="#" class="footer__item">Написать в техподдержку</a>
             </footer>
         </div>
+        <script src="./src/index.js"></script>
     </body>
 </html>

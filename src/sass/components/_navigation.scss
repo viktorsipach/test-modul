@@ -39,3 +39,31 @@
 .navigation__link:hover .icon {
     margin-top: 12px;
 }
+
+.navigation__link_search {
+        width: 47px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        background: $color-opacity;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
+.active_link {
+    height: 55px;
+    background: $color-primary;
+    @extend %transition;
+}
+
+.active_link:after {
+    content: attr(data-name);
+    color: $color-white;
+    padding-bottom: 4px;
+}
+
+.active_link .icon {
+    margin-top: 12px;
+}
