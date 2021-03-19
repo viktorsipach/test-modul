@@ -1,0 +1,16 @@
+.footer {
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 210px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-top: 1px solid #E3E3E3;
+
+    &__item {
+        @include font($size: 1.2rem, $height: 2.6rem, $weight: 500);
+        margin-right: 20px;
+        color: #828282;
+        text-decoration: none;
+    }
+}

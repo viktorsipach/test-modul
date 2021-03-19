@@ -1,0 +1,7 @@
+.logo {
+    width: 160px;
+    @include font($size: 3.6rem, $height: 2.6rem, $weight: 900);
+    color: #9E9494;
+    text-transform: uppercase;
+    margin-left: 183px;
+}

@@ -1,0 +1,62 @@
+.sidebar {
+    width: 280px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 210px;
+
+    &__header {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        @include font($size: 1.4rem, $height: 2.6rem, $weight: 800);
+        background-color: $color-primary;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &__items {
+        height: 47px;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-left: 5px solid $color-white;
+        background-color: $color-white;
+        @extend %transition;
+        &:hover {
+            cursor: pointer;
+            border-left: 5px solid $color-primary;
+            background-color: $color-background;
+            box-sizing: content-box;
+        }
+    }
+
+    &__name {
+        @include font($size: 1.4rem, $height: 2.6rem, $weight: normal);
+        color: $color-dark-grey;
+    }
+
+    &__counter {
+        position:absolute;
+        right: 16px;
+    }
+
+    &__current {
+        color: #E5635B;
+    }
+
+    &__items:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+
+

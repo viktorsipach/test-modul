@@ -1,0 +1,54 @@
+.icon {
+    display: flex;
+    width: 20px;
+    height: 22px;
+    margin-left: 16px;
+    margin-right: 13px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-friends {
+    background-image: url('../img/icons/friends-sidebar.svg');
+}
+
+.icon-followers {
+    background-image: url('../img/icons/followers.svg');
+}
+
+.icon-following {
+    background-image: url('../img/icons/following.svg');
+}
+
+.icon-messages {
+    background-image: url('../img/icons/messages-sidebar.svg');
+}
+
+.icon-category {
+    background-image: url('../img/icons/category.svg');
+}
+
+.icon-new {
+    background-image: url('../img/icons/new.svg');
+}
+
+.icon-popular {
+    background-image: url('../img/icons/trending.svg');
+}
+
+.icon-recommendation {
+    background-image: url('../img/icons/recommendation.svg');
+}
+
+.icon-black-list {
+    background-image: url('../img/icons/black-list.svg');
+}
+
+.icon-invite {
+    background-image: url('../img/icons/invite.svg');
+}
+
+.icon-search {
+    background-image: url('../img/icons/search-sidebar.svg');
+}
+
